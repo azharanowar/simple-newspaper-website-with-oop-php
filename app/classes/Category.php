@@ -10,27 +10,35 @@ class Category
         $this->categories = [
             0   =>  [
                 'id'    =>  1,
-                'name'  =>  "National",
+                'name'  =>  "Breaking News",
             ],
             1   =>  [
                 'id'    =>  2,
-                'name'  =>  "International",
+                'name'  =>  "Regular News",
             ],
             2   =>  [
                 'id'    =>  3,
-                'name'  =>  "Politics",
+                'name'  =>  "International News",
             ],
             3   =>  [
                 'id'    =>  4,
-                'name'  =>  "Economics",
+                'name'  =>  "Entertainment",
             ],
             4   =>  [
                 'id'    =>  5,
-                'name'  =>  "Sports",
+                'name'  =>  "Economics",
             ],
             5   =>  [
                 'id'    =>  6,
-                'name'  =>  "Science & Technology",
+                'name'  =>  "Sports",
+            ],
+            6   =>  [
+                'id'    =>  7,
+                'name'  =>  "Culture",
+            ],
+            7   =>  [
+                'id'    =>  8,
+                'name'  =>  "Arts",
             ],
         ];
     }

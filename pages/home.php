@@ -40,6 +40,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#" id="homePageNavLink">Home</a>
                                 </li>
+
+                                <?php foreach ($categories as $category) { ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#"><?php echo $category['name']; ?></a>
+                                    </li>
+                                <?php }?>
                             </ul>
                         </div>
                     </div>

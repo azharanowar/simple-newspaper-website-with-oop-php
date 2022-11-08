@@ -5,6 +5,7 @@ namespace App\classes;
 class Category
 {
     public $categories;
+
     public function __construct() {
         $this->categories = [
             0   =>  [
@@ -32,5 +33,9 @@ class Category
                 'name'  =>  "Science & Technology",
             ],
         ];
+    }
+
+    public function getAllCategories() {
+        return $this->categories;
     }
 }

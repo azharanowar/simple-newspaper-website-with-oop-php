@@ -54,6 +54,30 @@
             </div>
         </section>
     </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <?php foreach ($posts as $post) { ?>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/images/posts/<?php echo $post['image']; ?>" class="card-img-top" alt="Post Image">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href=""><?php echo $post['title']; ?></a></h5>
+                                    <p class="card-text text-muted"><?php echo $post['short_description']; ?></p>
+                                </div>
+                                <div class="m-3">
+                                    <a href=""><button class="btn btn-primary text-center w-100 py-2">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
 <script src="assets/js/bootstrap.min.js"></script>
 </body>

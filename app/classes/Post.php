@@ -9,6 +9,7 @@ class Post
     public function __construct() {
         $this->posts = [
             0   =>  [
+                'id'                =>  1,
                 'category_id'       =>  1,
                 'title'             =>  'Meta cuts more than 11,000 jobs; biggest cull in its history',
                 'short_description' =>  'Facebook’s parent company, whose shares have lost more than two-thirds of their value, said it also plans to cut discretionary spending and extend its hiring freeze through the first quarter.',
@@ -16,6 +17,7 @@ class Post
                 'image'             =>  '1.webp',
             ],
             1   =>  [
+                'id'                =>  2,
                 'category_id'       =>  5,
                 'title'             =>  'Elon Musk sells Tesla shares worth $3.95bn after Twitter takeover',
                 'short_description' =>  'World’s richest person sold 19.5 million shares of the electric car company after he bought Twitter.',
@@ -23,6 +25,7 @@ class Post
                 'image'             =>  '2.webp',
             ],
             2   =>  [
+                'id'                =>  3,
                 'category_id'       =>  5,
                 'title'             =>  'Nationwide strike over inflation disrupts transport across Greece',
                 'short_description' =>  'Ground transport, flights and ferry services are disrupted in Greece after a 24-hour nationwide strike begins over higher wages.',
@@ -30,6 +33,7 @@ class Post
                 'image'             =>  '3.webp',
             ],
             3   =>  [
+                'id'                =>  4,
                 'category_id'       =>  5,
                 'title'             =>  'US, EU add more sanctions as Myanmar violence deepens',
                 'short_description' =>  'Latest measures target officials and arms dealers as the military uses brutal force to respond to widespread armed resistance to its rule.',
@@ -37,6 +41,7 @@ class Post
                 'image'             =>  '4.webp',
             ],
             4   =>  [
+                'id'                =>  5,
                 'category_id'       =>  1,
                 'title'             =>  'North Korea fires ballistic missile towards East Sea: S Korea',
                 'short_description' =>  'Launch is the latest in a record year of missile tests by N Korea and comes as US mid-term election results announced.',
@@ -44,6 +49,7 @@ class Post
                 'image'             =>  '5.webp',
             ],
             5   =>  [
+                'id'                =>  6,
                 'category_id'       =>  3,
                 'title'             =>  'Pakistan PM writes to top judge on Khan attack, journalist murder',
                 'short_description' =>  'Shehbaz Sharif calls for the formation of judicial commissions to probe the assassination attempt on Imran Khan and TV journalist’s killing in Kenya.',
@@ -51,6 +57,7 @@ class Post
                 'image'             =>  '6.webp',
             ],
             6   =>  [
+                'id'                =>  7,
                 'category_id'       =>  1,
                 'title'             =>  'Palestinian teenager killed as Israeli MPs hold event in Nablus',
                 'short_description' =>  'Mahdi Hashash, 15, was killed when a hand-made explosive blew up in his hand during an Israeli army raid on Nablus.',
@@ -58,6 +65,7 @@ class Post
                 'image'             =>  '7.webp',
             ],
             7   =>  [
+                'id'                =>  8,
                 'category_id'       =>  3,
                 'title'             =>  'Ukraine says talks with Russia hinge on ‘territorial integrity’',
                 'short_description' =>  'Kyiv calls for the restoration of Ukraine’s borders as a precondition for negotiations while ruling out any talks with Putin.',
@@ -65,6 +73,7 @@ class Post
                 'image'             =>  '8.webp',
             ],
             8   =>  [
+                'id'                =>  9,
                 'category_id'       =>  6,
                 'title'             =>  'Senegal’s Sadio Mane in injury scare 11 days before the World Cup',
                 'short_description' =>  'Forward will have scans on a leg injury and club officials say he should be fit for the World Cup.',
@@ -72,6 +81,7 @@ class Post
                 'image'             =>  '9.webp',
             ],
             9   =>  [
+                'id'                =>  10,
                 'category_id'       =>  6,
                 'title'             =>  'Pakistan thump New Zealand to reach T20 World Cup final',
                 'short_description' =>  'Openers put on 105 as Pakistan chase down 153 to reach the final of the tournament they last won in 2009.',
@@ -79,6 +89,7 @@ class Post
                 'image'             =>  '10.webp',
             ],
             10   =>  [
+                'id'                =>  11,
                 'category_id'       =>  2,
                 'title'             =>  'Who is Alaa Abd el-Fattah and why is he imprisoned in Egypt?',
                 'short_description' =>  'The Egyptian-British activist stopped drinking water on Sunday in an effort to bring attention to his plight as COP27 began.',
@@ -86,6 +97,7 @@ class Post
                 'image'             =>  '11.webp',
             ],
             11   =>  [
+                'id'                =>  12,
                 'category_id'       =>  3,
                 'title'             =>  'Turkey demands Sweden take concrete steps prior to NATO approval',
                 'short_description' =>  'Ankara is demanding that Sweden and Finland extradite Kurdish rebels before lifting a veto on their membership bid.',
@@ -93,6 +105,7 @@ class Post
                 'image'             =>  '12.webp',
             ],
             12   =>  [
+                'id'                =>  13,
                 'category_id'       =>  2,
                 'title'             =>  'Bangladesh disappearances ‘a matter of grave concern’',
                 'short_description' =>  'Rights advocates accuse authorities of using ‘abductions’ to send message to people regarded as a threat to the state.',
@@ -100,6 +113,7 @@ class Post
                 'image'             =>  '13.webp',
             ],
             13   =>  [
+                'id'                =>  14,
                 'category_id'       =>  2,
                 'title'             =>  'Two Rohingya camp leaders killed in Bangladesh',
                 'short_description' =>  'Police spokesman Faruk Ahmed says the two Rohingya leaders were killed at Camp 13 in one of the worst attacks in recent months.',
@@ -121,6 +135,14 @@ class Post
         }
 
         return $this->postsData;
+    }
+
+    public function getPostDetailedInformationById($postId) {
+        foreach ($this->posts as $post) {
+            if ($post['id'] == $postId) {
+                return $post;
+            }
+        }
     }
 
 }

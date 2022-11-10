@@ -1,5 +1,4 @@
 <?php include "pages/header.php"; ?>
-
     <main>
         <section>
             <div class="container">
@@ -17,11 +16,11 @@
                             <div class="card h-100">
                                 <img src="assets/images/posts/<?php echo $post['image']; ?>" class="card-img-top" alt="Post Image">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href=""><?php echo $post['title']; ?></a></h5>
+                                    <h5 class="card-title"><a href="action.php?page=detailed_news&id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h5>
                                     <p class="card-text text-muted"><?php echo $post['short_description']; ?></p>
                                 </div>
                                 <div class="m-3">
-                                    <a href=""><button class="btn btn-primary text-center w-100 py-2">Learn More</button></a>
+                                    <a href="action.php?page=detailed_news&id=<?php echo $post['id']; ?>"><button class="btn btn-primary text-center w-100 py-2">Learn More</button></a>
                                 </div>
                             </div>
                         </div>

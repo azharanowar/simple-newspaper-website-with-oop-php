@@ -18,5 +18,8 @@ if (isset($_GET['page'])) {
     } else if ($_GET['page'] === 'category') {
         $posts = $post->getPostsByCategoryId($_GET['id']);
         include "pages/category.php";
+    } else if ($_GET['page'] === 'detailed_news') {
+        $postDetailedInformation = $post->getPostDetailedInformationById($_GET['id']);
+        include "pages/detailed_post.php";
     }
 }

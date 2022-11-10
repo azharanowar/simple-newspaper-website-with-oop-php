@@ -57,7 +57,16 @@
     <main>
         <section>
             <div class="container">
+                <div class="row" id="preloaderSection">
+                    <div class="col-md-12">
+                        <div class="py-3 my-3 rounded-2 text-center">
+                            <img class="preloader-img" src="assets/images/preloader.gif" alt="Preloader Image">
+                        </div>
+                    </div>
+                </div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
 
                     <?php foreach ($posts as $post) { ?>
                         <div class="col">

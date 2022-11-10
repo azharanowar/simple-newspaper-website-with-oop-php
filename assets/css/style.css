@@ -7,7 +7,7 @@ body {
 .navbar-nav .active {
     color: #0d6efd !important;
     border-bottom: 2px solid #0d6efd !important;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .navbar-nav {
@@ -16,4 +16,13 @@ body {
 
 .nav-link, a {
     cursor: pointer;
+}
+
+.preloader-img {
+    height: 40px;
+    width: 40px;
+}
+
+#preloaderSection {
+    display: none;
 }
